@@ -4,7 +4,7 @@ import { Avatar,Button } from "@mui/material"
 export const PageTopStyled = styled("div")`
     background-color: ${({ theme }) => theme.palette.grey[900]};
     display: flex;
-    padding: 50px 200px ;
+    padding: 100px 200px ;
     font-family: sans-serif;
 `
 

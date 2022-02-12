@@ -1,4 +1,5 @@
 import React from "react";
+import { RiSendPlane2Line } from "react-icons/ri"
 import { PageTopStyled, 
          AvatarStyled, 
          TopTitle, 
@@ -16,10 +17,10 @@ const PageTitle = () => {
                 <SubTitle>Desenvolvedor Full Stack</SubTitle> 
                 <Text>
                     Seja muito bem vindo, se está em busca
-                    de um dev com muita garra e vontade de 
-                    aprender achou a pessoa certa!
+                    de um DEV para seu time com muita garra e vontade de 
+                    aprender a cada dia mais, achou a pessoa certa!
                 </Text>
-                <ButtonStyled>Contate-me </ButtonStyled>
+                <ButtonStyled><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
             </div>          
             <AvatarStyled src={'img/Perfil.jpg'}/>
                            
