@@ -1,6 +1,8 @@
-import type { NextPage } from 'next'
-import PageTitle from 'ui/components/topo/topo'
-import Biography from 'ui/components/information/biography/biography'
+import type { NextPage } from 'next';
+import PageTitle from 'ui/components/topo/topo';
+import Biography from 'ui/components/information/biography/biography';
+import Skills from 'ui/components/information/skills/Skills'; 
+
 
 
 const Home: NextPage = () => {
@@ -8,7 +10,7 @@ const Home: NextPage = () => {
     <div>
       <PageTitle/>
       <Biography/>
-
+      <Skills/>
     </div>
   )
 }

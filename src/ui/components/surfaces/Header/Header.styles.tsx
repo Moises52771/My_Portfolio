@@ -3,7 +3,8 @@ import { AppBar } from "@mui/material";
 import { FaLinkedin, FaGithubSquare, FaWhatsapp } from 'react-icons/fa';
 
 export const HeaderAppBar = styled(AppBar)`
-  background-color: ${({ theme }) => theme.palette.grey[900]};;
+  background-color: ${({ theme }) => theme.palette.background.default};;
+  color: ${({ theme }) => theme.palette.text.primary};
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.05);
   ${({ theme }) => theme.breakpoints.up("md")} {
     .MuiToolbar-root {
@@ -27,18 +28,21 @@ export const HeaderLogo = styled("img")`
 `;
 
 export const FaLinkedinStyled = styled(FaLinkedin)`
+    color: ${props => props.theme.palette.primary.light};
     width: 30px;
     height: 30px;
     margin: 5px;
 `
 
 export const FaGithubSquareStyled = styled(FaGithubSquare)`
+    color: ${props => props.theme.palette.primary.light};
     width: 30px;
     height: 30px;
     margin: 5px;
 `
 
 export const FaWhatsappStyled = styled(FaWhatsapp)`
+    color: ${props => props.theme.palette.primary.light};
     width: 30px;
     height: 30px;
     margin: 5px;

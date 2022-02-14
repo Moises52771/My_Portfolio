@@ -1,8 +1,9 @@
 import { styled } from "@mui/material/styles"
 import { Avatar,Button } from "@mui/material"
+import { FcMultipleDevices } from "react-icons/fc"
 
 export const PageTopStyled = styled("div")`
-    background-color: ${({ theme }) => theme.palette.grey[900]};
+    background-color: ${props => props.theme.palette.background.default};
     display: flex;
     padding: 100px 200px ;
     font-family: sans-serif;
@@ -40,7 +41,7 @@ export const Text = styled('div')`
 
 export const ButtonStyled = styled(Button)`
     background-color: ${({ theme }) => theme.palette.secondary.main};
-    color: ${({ theme }) => theme.palette.text.primary};
+    color: ${({ theme }) => theme.palette.primary.contrastText};
     margin-top: 40px;
     width: 150px;
     height: 40px;
@@ -48,4 +49,10 @@ export const ButtonStyled = styled(Button)`
     font-size: 16px;
     border: solid 2px ${({ theme }) => theme.palette.secondary.main};
 `
+
+export const FcMultipleDevicesStyled = styled(FcMultipleDevices)`
+    
+`
+
+
 
