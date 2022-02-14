@@ -1,13 +1,13 @@
 import React from "react";
 import { HeaderAppBar, FaGithubSquareStyled, FaLinkedinStyled, FaWhatsappStyled, IconsContainerStyled} from "./Header.styles";
 import { Toolbar, Container } from "@mui/material";
-import { FaLinkedin, FaGithubSquare, FaWhatsapp } from 'react-icons/fa';
-import { RiLinkedinBoxLine } from 'react-icons/ri';
-import * as IoIcons from 'react-icons/io';
-import * as BsIcons from 'react-icons/bs';
+import { useAppThemeContext } from 'contexts/ThemeContext'
+import { BoxSwitch } from "ui/components/surfaces/Header/Header.styles";
 
 
 const Header: React.FC = () => {
+  const { toggleTheme, icon } = useAppThemeContext();
+
   return (
     <HeaderAppBar position={"sticky"}>
         <Toolbar component={Container}>
@@ -21,6 +21,9 @@ const Header: React.FC = () => {
                 <a href="https://wa.me/5511954642820"><FaWhatsappStyled/></a>
 
             </IconsContainerStyled>
+            <BoxSwitch onClick={toggleTheme}>
+              {icon}
+            </BoxSwitch>
         </Toolbar>
     </HeaderAppBar>
   );

@@ -1,13 +1,16 @@
+import { blueGrey, grey } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 const DarkTheme = createTheme({
     palette: {
-        mode: 'dark',
+        
         primary: {
             main: "#617eff",
         },
         secondary: {
+            light: grey[600],
             main: "#6B2AEE",
+            dark: blueGrey[700],
         },
         text: {
             primary: '#e4e4e4',

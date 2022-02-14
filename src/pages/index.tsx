@@ -5,7 +5,9 @@ import Skills from 'ui/components/information/skills/Skills';
 
 
 
-const Home: NextPage = () => {
+const Home: NextPage = () => { 
+
+
   return (
     <div>
       <PageTitle/>

@@ -62,11 +62,14 @@ export const RiMedalLineStyled = styled(RiMedalLine)`
 
 export const ButtonStyled = styled(Button)`
     background-color: ${({ theme }) => theme.palette.secondary.main};
-    border: solid 2px ${({ theme }) => theme.palette.secondary.main};
     color: ${({ theme }) => theme.palette.primary.contrastText};
     font-family: sans-serif;
     margin: 40px auto 10px;
     font-size: 16px;
     width: 200px;
     height: 50px;
+
+    :hover{
+        background-color: ${({ theme }) => theme.palette.secondary.light};
+    }
 `

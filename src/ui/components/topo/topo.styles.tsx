@@ -47,7 +47,10 @@ export const ButtonStyled = styled(Button)`
     height: 40px;
     font-family: sans-serif;
     font-size: 16px;
-    border: solid 2px ${({ theme }) => theme.palette.secondary.main};
+
+    :hover{
+        background-color: ${({ theme }) => theme.palette.secondary.light};
+    }
 `
 
 export const FcMultipleDevicesStyled = styled(FcMultipleDevices)`

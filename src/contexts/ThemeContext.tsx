@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useMemo, useState } from "react
 import { ThemeProvider } from "@mui/material"
 import LightTheme from "ui/styles/themes/LightTheme";
 import DarkTheme from "ui/styles/themes/DarkTheme";
-import { FaMoonStyled, WiDaySunnyStyled } from "ui/styles/pages/_app.styles";
+import { FaMoonStyled, WiDaySunnyStyled } from "ui/components/surfaces/Header/Header.styles";
 
 interface IThemeContextData {
     themeName: 'light' | 'dark';
@@ -23,15 +23,15 @@ export const AppThemeProvider: React.FC = ({ children }) => {
 
     const toggleTheme = useCallback(() => {
         setThemeName(oldThemeName => oldThemeName === 'light' ? 'dark' : 'light' )
-    }, []);
+    }, [setThemeName]);
 
     const theme = useMemo(() => {
         if (themeName === 'light') {
-            setIcon(<WiDaySunnyStyled/>); 
+            setIcon(<FaMoonStyled/>)
             return LightTheme;
         }
-
-        setIcon(<FaMoonStyled/>)
+        
+        setIcon(<WiDaySunnyStyled/>)
         return DarkTheme;
     }, [themeName])
 
@@ -39,6 +39,7 @@ export const AppThemeProvider: React.FC = ({ children }) => {
         <ThemeContext.Provider value={{ themeName, toggleTheme, icon }}>
             <ThemeProvider theme={theme}>
                 {children}
+                {toggleTheme}
             </ThemeProvider>
         </ThemeContext.Provider>
     )

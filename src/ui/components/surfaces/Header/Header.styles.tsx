@@ -1,6 +1,8 @@
 import { styled } from "@mui/material/styles";
 import { AppBar } from "@mui/material";
 import { FaLinkedin, FaGithubSquare, FaWhatsapp } from 'react-icons/fa';
+import { WiDaySunny } from 'react-icons/wi'
+import { FaCloudMoon } from 'react-icons/fa'
 
 export const HeaderAppBar = styled(AppBar)`
   background-color: ${({ theme }) => theme.palette.background.default};;
@@ -53,3 +55,24 @@ export const IconsContainerStyled = styled('div')`
     margin-right: 50px;
 `
 
+export const BoxSwitch = styled('div')`
+  background-color: none;
+  padding: 0px;
+  width: 10px;
+  height:30px;
+  right: 25px;
+  top: 105px;
+  border-radius: 150px;
+`
+
+export const WiDaySunnyStyled = styled(WiDaySunny)`
+  width: 30px;
+  height: 30px;
+  color: ${props => props.theme.palette.grey[100]}
+`
+
+export const FaMoonStyled = styled(FaCloudMoon)`
+  width: 20px;
+  height: 25px;
+  color: ${props => props.theme.palette.grey[900]}
+`

@@ -11,6 +11,7 @@ import { PageTopStyled,
 
 
 const PageTitle = () => {
+
     return(
         <PageTopStyled>
             <div>
@@ -21,9 +22,9 @@ const PageTitle = () => {
                     de um DEV para seu time com muita garra e vontade de 
                     aprender a cada dia mais, achou a pessoa certa!
                 </Text>
-                <ButtonStyled><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
+                <ButtonStyled ><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
             </div>          
-            <AvatarStyled src={'img/Perfil.jpg'}/>
+            <AvatarStyled/>
                            
         </PageTopStyled>
     )
