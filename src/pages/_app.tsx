@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { AppContainer } from "ui/styles/pages/_app.styles";
 import Header from "ui/components/surfaces/Header/Header"
 import { AppThemeProvider } from 'contexts/ThemeContext'
+import Footer from 'ui/components/surfaces/Footer/Footer';
 
 
 
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <AppContainer>
           <Header />
           <Component {...pageProps} />
+          <Footer/>
         </AppContainer>
       </AppThemeProvider>
     </>

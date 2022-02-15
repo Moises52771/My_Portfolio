@@ -18,6 +18,11 @@ export const SkillsContainer = styled('div')`
     flex-direction: column;
     padding: 50px 200px;
     font-family: sans-serif;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        padding: 50px 40px ;
+    }
 `  
 
 export const Title = styled('h2')`
@@ -50,6 +55,11 @@ export const Box = styled(Button)`
 
     :hover{
         background-color: ${({ theme }) => theme.palette.secondary.light};
+    }
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        margin: 5px;
     }
 `
 

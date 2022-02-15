@@ -6,7 +6,8 @@ import { PageTopStyled,
          SubTitle, 
          Text, 
          ButtonStyled,
-         FcMultipleDevicesStyled
+         FcMultipleDevicesStyled,
+         Div
         } from "./topo.styles";
 
 
@@ -14,7 +15,7 @@ const PageTitle = () => {
 
     return(
         <PageTopStyled>
-            <div>
+            <Div>
                 <TopTitle>Olá, sou Moises Gomes</TopTitle> 
                 <SubTitle>Desenvolvedor Full Stack <FcMultipleDevicesStyled/></SubTitle> 
                 <Text>
@@ -22,8 +23,8 @@ const PageTitle = () => {
                     de um DEV para seu time com muita garra e vontade de 
                     aprender a cada dia mais, achou a pessoa certa!
                 </Text>
-                <ButtonStyled ><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
-            </div>          
+                <ButtonStyled href={"https://www.linkedin.com/in/moisesgomesdev52771"}><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
+            </Div>          
             <AvatarStyled/>
                            
         </PageTopStyled>

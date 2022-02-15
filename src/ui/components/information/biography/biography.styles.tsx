@@ -10,6 +10,11 @@ export const BiographyContainer = styled('div')`
     flex-direction: column;
     padding: 50px 200px;
     font-family: sans-serif;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        padding: 50px 40px ;
+    }
 `   
 
 export const Title = styled('h2')`
@@ -24,12 +29,22 @@ export const Text = styled('div')`
     margin-top: 40px;
     padding-left: 100px;
     padding-right: 100px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        padding: 0 50px;
+    }
 `
 
 export const Feedback = styled('div')`
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        padding: 0 50px ;
+    }
 `
 
 export const Icons = styled('div')`
@@ -70,6 +85,6 @@ export const ButtonStyled = styled(Button)`
     height: 50px;
 
     :hover{
-        background-color: ${({ theme }) => theme.palette.secondary.light};
+        background-color: #6B2AEEbb;
     }
 `

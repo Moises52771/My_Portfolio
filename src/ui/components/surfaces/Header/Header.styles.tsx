@@ -5,7 +5,7 @@ import { WiDaySunny } from 'react-icons/wi'
 import { FaCloudMoon } from 'react-icons/fa'
 
 export const HeaderAppBar = styled(AppBar)`
-  background-color: ${({ theme }) => theme.palette.background.default};;
+  background-color: ${({ theme }) => theme.palette.background.default};
   color: ${({ theme }) => theme.palette.text.primary};
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.05);
   ${({ theme }) => theme.breakpoints.up("md")} {
@@ -16,8 +16,11 @@ export const HeaderAppBar = styled(AppBar)`
   }
   ${({ theme }) => theme.breakpoints.down("md")} {
     .MuiToolbar-root {
+      background-color: ${({ theme }) => theme.palette.background.default};
       display: flex;
       justify-content: center;
+      width: 100vw;
+      height: 150px;
     }
   }
 `;
@@ -34,6 +37,7 @@ export const FaLinkedinStyled = styled(FaLinkedin)`
     width: 30px;
     height: 30px;
     margin: 5px;
+
 `
 
 export const FaGithubSquareStyled = styled(FaGithubSquare)`
@@ -41,6 +45,8 @@ export const FaGithubSquareStyled = styled(FaGithubSquare)`
     width: 30px;
     height: 30px;
     margin: 5px;
+
+    
 `
 
 export const FaWhatsappStyled = styled(FaWhatsapp)`
@@ -48,6 +54,7 @@ export const FaWhatsappStyled = styled(FaWhatsapp)`
     width: 30px;
     height: 30px;
     margin: 5px;
+
 `
 
 export const IconsContainerStyled = styled('div')`

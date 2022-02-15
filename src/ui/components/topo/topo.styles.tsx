@@ -7,6 +7,13 @@ export const PageTopStyled = styled("div")`
     display: flex;
     padding: 100px 200px ;
     font-family: sans-serif;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 50px 40px ;
+        text-align: center;
+    }
 `
 
 export const AvatarStyled = styled(Avatar)`
@@ -14,6 +21,14 @@ export const AvatarStyled = styled(Avatar)`
     height: 350px;
     width: 350px;
     margin-left: auto;
+    
+
+    ${props => props.theme.breakpoints.down('md')}{
+        height: 200px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 `
 
 export const TopTitle = styled('h1')`
@@ -37,6 +52,11 @@ export const Text = styled('div')`
     width: 400px;
     margin-right: auto;
     margin-top: 0px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        margin: 0 auto;
+        text-align: center;
+    }
 `
 
 export const ButtonStyled = styled(Button)`
@@ -49,9 +69,20 @@ export const ButtonStyled = styled(Button)`
     font-size: 16px;
 
     :hover{
-        background-color: ${({ theme }) => theme.palette.secondary.light};
+        background-color: #6B2AEEbb;
+    }
+
+    ${props => props.theme.breakpoints.down('md')}{
+        margin-left: auto;
+        margin-right: auto;
     }
 `
+
+export const Div = styled('div')`
+    display: flex;
+    flex-direction: column;
+`
+
 
 export const FcMultipleDevicesStyled = styled(FcMultipleDevices)`
     
