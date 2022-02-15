@@ -38,6 +38,12 @@ export const TopTitle = styled('h1')`
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 15px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 `
 export const SubTitle = styled('h3')`
@@ -45,6 +51,12 @@ export const SubTitle = styled('h3')`
     width: 500px;
     margin-right: auto;
     margin-top: 0px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
 `
 
 export const Text = styled('div')`

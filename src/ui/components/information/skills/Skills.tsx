@@ -85,7 +85,7 @@ const Skills = () => {
                     <Box>
                         <SiSapStyled/>
                         <h3>
-                            SAP - ABAP
+                            ABAP
                         </h3>
                     </Box>
                 </Lines>

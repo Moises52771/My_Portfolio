@@ -25,7 +25,7 @@ const PageTitle = () => {
                 </Text>
                 <ButtonStyled href={"https://www.linkedin.com/in/moisesgomesdev52771"}><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
             </Div>          
-            <AvatarStyled/>
+            <AvatarStyled src={'img/perfil1.jpg'}/>
                            
         </PageTopStyled>
     )

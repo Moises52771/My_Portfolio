@@ -15,12 +15,13 @@ export const HeaderAppBar = styled(AppBar)`
     }
   }
   ${({ theme }) => theme.breakpoints.down("md")} {
+    justify-content: center;
     .MuiToolbar-root {
       background-color: ${({ theme }) => theme.palette.background.default};
       display: flex;
-      justify-content: center;
-      width: 100vw;
+      width: 90%;
       height: 150px;
+      margin: 0 auto;
     }
   }
 `;
