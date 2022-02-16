@@ -12,8 +12,8 @@ const images = [
       thumbnail: 'img/projects/p2.jpg',
     },
     {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
+      original: 'img/projects/p3.jpg',
+      thumbnail: 'img/projects/p3.jpg',
     },
     {
       original: 'https://picsum.photos/id/1019/1000/600/',

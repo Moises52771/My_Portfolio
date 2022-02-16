@@ -44,7 +44,9 @@ export const Lines = styled('div')`
 export const Box = styled(Button)`
     display: flex;
     flex-direction: column;
-    background-color: ${({ theme }) => theme.palette.secondary.dark};
+    background: linear-gradient(180deg, 
+                ${props => props.theme.palette.secondary.dark} 60%,
+                ${props => props.theme.palette.secondary.light} 99%);
     color: ${({ theme }) => theme.palette.primary.contrastText};
     text-align: center;
     border-radius: 10px;
@@ -54,7 +56,9 @@ export const Box = styled(Button)`
     padding: 10px;
 
     :hover{
-        background-color: ${({ theme }) => theme.palette.secondary.light};
+        background: linear-gradient(180deg, 
+                ${props => props.theme.palette.secondary.dark} 30%,
+                ${props => props.theme.palette.secondary.light} 99%);
     }
 
     ${props => props.theme.breakpoints.down('md')}{

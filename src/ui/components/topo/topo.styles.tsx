@@ -3,7 +3,9 @@ import { Avatar,Button } from "@mui/material"
 import { FcMultipleDevices } from "react-icons/fc"
 
 export const PageTopStyled = styled("div")`
-    background-color: ${props => props.theme.palette.background.default};
+    background: linear-gradient(180deg, 
+                ${props => props.theme.palette.background.default} 40%,
+                ${props => props.theme.palette.background.paper} 90%);
     display: flex;
     padding: 100px 200px ;
     font-family: sans-serif;
