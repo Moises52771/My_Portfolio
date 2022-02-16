@@ -1,5 +1,6 @@
 import { styled } from "@mui/material/styles"
-import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos } from "react-icons/md"
+import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from 'react-image-gallery';
 
 
 export const PortfolioStyled = styled('div')`
@@ -31,27 +32,13 @@ export const PortfolioComponents = styled('div')`
     }
 `
 
-export const Items = styled('div')`
-    display: flex;
-    overflow: hidden;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    border-radius: 10px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-color: red;
+export const ImageGalleryStyled = styled(ImageGallery)`
+    width: 20px;
+
 `
 
-export const Item = styled('div')`
-    flex: none;
-    width: 70%;
-    height: 450px;
-    scroll-snap-align: start;
-`
 
-export const Img = styled('img')`
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-`
+
+
 
 
