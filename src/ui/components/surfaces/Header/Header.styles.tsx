@@ -71,6 +71,7 @@ export const BoxSwitch = styled('div')`
   right: 25px;
   top: 105px;
   border-radius: 150px;
+  cursor: pointer;
 `
 
 export const WiDaySunnyStyled = styled(WiDaySunny)`

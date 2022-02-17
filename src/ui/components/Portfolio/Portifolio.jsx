@@ -2,24 +2,11 @@ import React from "react";
 import { PortfolioStyled, 
          Title,
          PortfolioComponents,
-         ImageGalleryStyled
+         Content,
+         Navigation
        } from "./Portifolio.styles";
+       
 
-
-const images = [
-    {
-      original: 'img/projects/p2.jpg',
-      thumbnail: 'img/projects/p2.jpg',
-    },
-    {
-      original: 'img/projects/p3.jpg',
-      thumbnail: 'img/projects/p3.jpg',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
   
 
 const Portfolio = () =>{
@@ -32,7 +19,39 @@ const Portfolio = () =>{
                 Portifolio
             </Title>
             <PortfolioComponents>
-              <ImageGalleryStyled items={images} />
+                <Content>
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1"/>
+                        <input type="radio" name="slide" id="slide2"/>
+                        <input type="radio" name="slide" id="slide3"/>
+                        <input type="radio" name="slide" id="slide4"/>
+                        <input type="radio" name="slide" id="slide5"/>
+
+
+                        <div class="slide s1">
+                            <img src="img/projects/p1.jpg"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/projects/p2.jpg"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/projects/p3.jpg"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/projects/p4.gif"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/projects/p3.jpg"/>
+                        </div>
+                    </div>
+                    <Navigation>
+                        <label for="slide1" class="bar" id="lbSlide1"></label>
+                        <label for="slide2" class="bar" id="lbSlide2"></label>
+                        <label for="slide3" class="bar" id="lbSlide3"></label>
+                        <label for="slide4" class="bar" id="lbSlide4"></label>
+                        <label for="slide5" class="bar" id="lbSlide5"></label>
+                    </Navigation>
+                </Content> 
 
             </PortfolioComponents>
         </PortfolioStyled>
@@ -41,3 +60,4 @@ const Portfolio = () =>{
 
 
 export default Portfolio;
+
