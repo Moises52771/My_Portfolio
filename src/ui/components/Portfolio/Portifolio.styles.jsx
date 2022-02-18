@@ -1,5 +1,6 @@
 import { styled } from "@mui/material/styles"
 import "react-image-gallery/styles/css/image-gallery.css";
+import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai"
 
 
 export const PortfolioStyled = styled('div')`
@@ -18,7 +19,9 @@ export const Title = styled('h2')`
     text-align: center;
     font-size: 30px;
     color: ${({ theme }) => theme.palette.text.primary};
+
 `
+
 
 export const PortfolioComponents = styled('div')`
     margin: 0 auto;
@@ -37,8 +40,8 @@ export const PortfolioComponents = styled('div')`
 
 // ----------------Slideshow------------------------------------------------------
 export const Content = styled('div')`
-    height: 440px;
-    width: 820px;
+    height: 340px;
+    width: 690px;
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto;
@@ -98,10 +101,10 @@ export const Navigation = styled('div')`
     position: relative;
     bottom: 30px;
     margin: 0 auto;
-    transform: translate(24%);
+    transform: translate(23%);
 
     ${props => props.theme.breakpoints.down('md')}{
-        transform: translate(18%);
+        transform: translate(16%);
         
     }
 
@@ -110,7 +113,7 @@ export const Navigation = styled('div')`
     }
 
     .bar{
-        width: 70px;
+        width: 60px;
         height: 17px;
         border: 2px solid #f3f3f3;
         background-color: #414141;
@@ -131,6 +134,74 @@ export const Navigation = styled('div')`
     }
 
 
+
+`
+
+
+//-----------------------------------------------------------------------------------
+//----------- Informaações dos projetos ---------------------------------------------
+
+
+export const ProjectContainer = styled('div')`
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px;
+    font-family: sans-serif;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        padding: 0 40px ;
+    }
+`
+
+export const SubTitle = styled('h2')`
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: ${({ theme }) => theme.palette.text.primary};
+
+`
+
+export const Text = styled('div')`
+    color: ${({ theme }) => theme.palette.text.primary};
+    text-align: center;
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        padding: 0 50px;
+    }
+`
+
+export const IconsContainer = styled("div")`
+    margin: 0 auto;
+`
+
+export const AiFillGithubStyled = styled(AiFillGithub)`
+    color: ${({ theme }) => theme.palette.primary.light};
+    margin: 20px 10px 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+    }
+
+`
+
+export const AiOutlineGlobalStyled = styled(AiOutlineGlobal)`
+    color: ${({ theme }) => theme.palette.primary.light};
+    margin: 20px 10px 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+    }
 
 `
 

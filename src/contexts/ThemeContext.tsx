@@ -23,7 +23,7 @@ export const AppThemeProvider: React.FC = ({ children }) => {
 
     const toggleTheme = useCallback(() => {
         setThemeName(oldThemeName => oldThemeName === 'light' ? 'dark' : 'light' )
-    }, [setThemeName]);
+    }, []);
 
     const theme = useMemo(() => {
         if (themeName === 'light') {
