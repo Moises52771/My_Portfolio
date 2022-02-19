@@ -88,7 +88,7 @@ const Portfolio = () =>{
 
 
     //----------- Escolhe o conteudo dos slides -----------------------------------------------------------
-    const slide = useMemo(() => {
+    const slide = useMemo(() => {// Projeto My Portfolio
         if (currentSlide == 1){
             return(
                 <ProjectContainer>
@@ -97,8 +97,17 @@ const Portfolio = () =>{
                         <AiOutlineGlobalStyled/>
                     </IconsContainer>
                     <SubTitle>
-                        Projeto 1
+                        Projeto My Portfolio
                     </SubTitle>
+                    <IconsContainer>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
+                    </IconsContainer>
+                    <Text>
+                        Projeto do meu portifolio pessoal desenvolvido com um layout responssivo
+                        ultilizando React.JS com Next.JS e Material-UI
+                    </Text>
                 </ProjectContainer>
             )
         }
@@ -110,48 +119,75 @@ const Portfolio = () =>{
                         <AiOutlineGlobalStyled/>
                     </IconsContainer>
                     <SubTitle>
-                        Projeto My Portfolio
+                        Projeto 2
                     </SubTitle>
                 </ProjectContainer>
             )
         }
-        else if (currentSlide == 3){
+        else if (currentSlide == 3){// Frontend E-Diaristas
             return(
                 <ProjectContainer>
-                    <IconsContainer>
-                        <AiFillGithubStyled/>
-                        <AiOutlineGlobalStyled/>
-                    </IconsContainer>
-                    <SubTitle>
-                        Projeto 3
-                    </SubTitle>
-                </ProjectContainer>
+                <IconsContainer>
+                    <AiFillGithubStyled/>
+                    <AiOutlineGlobalStyled/>
+                </IconsContainer>
+                <SubTitle>
+                    Frontend E-Diaristas
+                </SubTitle>
+                <IconsContainer>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+                </IconsContainer>
+                <Text>
+                    Projeto de uma aplicação web para contratação de diaristas, desenvolvido durante a 
+                    2° ediçao da semana multi-stack, ultilizando React.JS, Axios, Next.JS e Material-UI
+                </Text>
+            </ProjectContainer>
             )
         }
-        else if (currentSlide == 4){
+        else if (currentSlide == 4){// Backend E-Diaristas
             return(
                 <ProjectContainer>
-                    <IconsContainer>
-                        <AiFillGithubStyled/>
-                        <AiOutlineGlobalStyled/>
-                    </IconsContainer>
-                    <SubTitle>
-                        Projeto 4
-                    </SubTitle>
-                </ProjectContainer>
+                <IconsContainer>
+                    <AiFillGithubStyled/>
+                    <AiOutlineGlobalStyled/>
+                </IconsContainer>
+                <SubTitle>
+                    Backend E-Diaristas
+                </SubTitle>
+                <IconsContainer>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+                </IconsContainer>
+                <Text>
+                    Este projeto é composto por uma API desenvolvida em Python, que trata as requisições do frontend e 
+                    possui uma aplicação administrativa feita com Django e Bootstrap em seu desenvolvimeto
+                </Text>
+            </ProjectContainer>
             )
         }
         else if (currentSlide == 5){
             return(
                 <ProjectContainer>
-                    <IconsContainer>
-                        <AiFillGithubStyled/>
-                        <AiOutlineGlobalStyled/>
-                    </IconsContainer>
-                    <SubTitle>
-                        Projeto 5
-                    </SubTitle>
-                </ProjectContainer>
+                <IconsContainer>
+                    <AiFillGithubStyled/>
+                    <AiOutlineGlobalStyled/>
+                </IconsContainer>
+                <SubTitle>
+                    Projeto IES.Cronos
+                </SubTitle>
+                <IconsContainer>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                </IconsContainer>
+                <Text>
+                    Este projeto possui uma API desenvolvida em PHP, para tratar as requisições do frontend que 
+                    foi desenvolvido com React.JS
+                </Text>
+            </ProjectContainer>
             )
         }
     }, [currentSlide])
@@ -175,16 +211,16 @@ const Portfolio = () =>{
 
 
                         <div class="slide s1">
-                            <img src="img/projects/p1.jpg"/>
-                        </div>
-                        <div class="slide">
-                            <img src="img/projects/p2.jpg"/>
-                        </div>
-                        <div class="slide">
-                            <img src="img/projects/p3.jpg"/>
+                            <img src="img/projects/ProjetoMyPortfolio.jpg"/>
                         </div>
                         <div class="slide">
                             <img src="img/projects/p4.gif"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/projects/FrontEnd_E-diaristas.jpg"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/projects/BackEnd_E-diaristas.jpg"/>
                         </div>
                         <div class="slide">
                             <img src="img/projects/p3.jpg"/>

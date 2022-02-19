@@ -20,6 +20,11 @@ export const Title = styled('h2')`
     font-size: 30px;
     color: ${({ theme }) => theme.palette.text.primary};
 
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        margin-bottom: 50px;
+    }
+
 `
 
 
@@ -40,11 +45,12 @@ export const PortfolioComponents = styled('div')`
 
 // ----------------Slideshow------------------------------------------------------
 export const Content = styled('div')`
-    height: 340px;
-    width: 690px;
+    height: 300px;
+    width: 620px;
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto;
+    border: solid #333 1px;
 
     ${props => props.theme.breakpoints.down('md')}{
         
@@ -101,7 +107,7 @@ export const Navigation = styled('div')`
     position: relative;
     bottom: 30px;
     margin: 0 auto;
-    transform: translate(23%);
+    transform: translate(25%);
 
     ${props => props.theme.breakpoints.down('md')}{
         transform: translate(16%);
@@ -113,7 +119,7 @@ export const Navigation = styled('div')`
     }
 
     .bar{
-        width: 60px;
+        width: 50px;
         height: 17px;
         border: 2px solid #f3f3f3;
         background-color: #414141;
@@ -139,7 +145,7 @@ export const Navigation = styled('div')`
 
 
 //-----------------------------------------------------------------------------------
-//----------- Informaações dos projetos ---------------------------------------------
+//----------- Informações dos projetos ---------------------------------------------
 
 
 export const ProjectContainer = styled('div')`
@@ -155,7 +161,7 @@ export const ProjectContainer = styled('div')`
 `
 
 export const SubTitle = styled('h2')`
-    margin-top: 30px;
+    margin-top: 25px;
     text-align: center;
     font-size: 20px;
     color: ${({ theme }) => theme.palette.text.primary};
@@ -165,26 +171,36 @@ export const SubTitle = styled('h2')`
 export const Text = styled('div')`
     color: ${({ theme }) => theme.palette.text.primary};
     text-align: center;
-    margin-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-top: 20px;    
+    width: 400px;
 
     ${props => props.theme.breakpoints.down('md')}{
-        
+        width: 300px;
         padding: 0 50px;
     }
 `
 
 export const IconsContainer = styled("div")`
     margin: 0 auto;
+
+    img{
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+
+        ${props => props.theme.breakpoints.down('md')}{
+            width: 50px;
+            height: 50px;
+        }
+    }
 `
 
 export const AiFillGithubStyled = styled(AiFillGithub)`
     color: ${({ theme }) => theme.palette.primary.light};
     margin: 20px 10px 0;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
     ${props => props.theme.breakpoints.down('md')}{
         
@@ -196,8 +212,8 @@ export const AiOutlineGlobalStyled = styled(AiOutlineGlobal)`
     color: ${({ theme }) => theme.palette.primary.light};
     margin: 20px 10px 0;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
     ${props => props.theme.breakpoints.down('md')}{
         

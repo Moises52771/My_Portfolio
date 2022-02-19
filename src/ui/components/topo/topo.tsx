@@ -23,7 +23,7 @@ const PageTitle = () => {
                     de um DEV para seu time com muita garra e vontade de 
                     aprender a cada dia mais, achou a pessoa certa!
                 </Text>
-                <ButtonStyled href={"https://www.linkedin.com/in/moisesgomesdev52771"}><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
+                <ButtonStyled href={"https://wa.me/5511954642820"}><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
             </Div>          
             <AvatarStyled src={'img/perfil1.jpg'}/>
                            
