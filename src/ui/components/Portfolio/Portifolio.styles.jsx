@@ -11,7 +11,7 @@ export const PortfolioStyled = styled('div')`
 
     ${props => props.theme.breakpoints.down('md')}{
         
-        padding: 50px 40px ;
+        padding: 20px 40px ;
     }
 `
 
@@ -171,12 +171,13 @@ export const SubTitle = styled('h2')`
 export const Text = styled('div')`
     color: ${({ theme }) => theme.palette.text.primary};
     text-align: center;
-    margin-top: 20px;    
+    margin-top: 20px;
     width: 400px;
 
     ${props => props.theme.breakpoints.down('md')}{
         width: 300px;
         padding: 0 50px;
+        margin: 20px auto;
     }
 `
 

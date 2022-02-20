@@ -27,12 +27,14 @@ import {
             <FooterTitle>Minhas Redes</FooterTitle>
             <AppList>
               <li>
-                <a href={"/"} target={"_blank"} rel={"noopener nereferrer"}>
+                <a href={"https://www.facebook.com/moises.gomesdasilva.1848"}
+                    target={"_blank"} rel={"noopener nereferrer"}>
                   <FaFacebookSquareStyled/>
                 </a>
               </li>
               <li>
-                <a href={"/"} target={"_blank"} rel={"noopener nereferrer"}>
+                <a href={"https://www.instagram.com/moise_sgomes/"}
+                 target={"_blank"} rel={"noopener nereferrer"}>
                   <FaInstagramStyled/>
                 </a>
               </li>

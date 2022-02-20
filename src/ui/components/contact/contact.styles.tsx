@@ -41,6 +41,8 @@ export const Div = styled('div')`
     margin: 0 auto;
     width: 50%;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
 
     ${props => props.theme.breakpoints.down('md')}{
         width: 80%;
@@ -69,10 +71,19 @@ export const FiSmartphoneStyled = styled(FiSmartphone)`
 export const TitleBox = styled('div')`
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 15px auto 0;
 `
 export const TextBox = styled('div')`
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 0 auto 15px;
+`
+
+export const H3 = styled('h3')`
+    margin: 0;
+    font-size: 25px;
+`
+
+export const H3Text = styled('h3')`
+    
 `

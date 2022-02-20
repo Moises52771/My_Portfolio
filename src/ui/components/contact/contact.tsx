@@ -10,7 +10,9 @@ import { ContactStyled,
          FiSmartphoneStyled,
          Div,
          TitleBox,
-         TextBox
+         TextBox,
+         H3,
+         H3Text
         } from "./contact.styles";
 
 
@@ -26,28 +28,28 @@ const Contact: React.FC = () => {
                     <Div>
                         <TitleBox>
                             <MdAlternateEmailStyled/>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <h3>E-Mail</h3>
+                            <H3>E-Mail</H3>
                         </TitleBox>
                         <TextBox>
-                            <h3>moises.dev52771@gmail.com</h3>
+                            <H3Text>moises.dev52771@gmail.com</H3Text>
                         </TextBox>
                     </Div>
                     <Div>  
                         <TitleBox>                      
                             <FiSmartphoneStyled/>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <h3>Cel. &nbsp;&nbsp;&nbsp;</h3>
+                            <H3>Cel. &nbsp;&nbsp;&nbsp;</H3>
                         </TitleBox>
                         <TextBox>
-                            <h3>(11) 95464-2820</h3>
+                            <H3Text>(11) 95464-2820</H3Text>
                         </TextBox>
                     </Div>
                     <Div>
                         <TitleBox>
                             <GoLocationStyled/>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <h3>Localização</h3>
+                            <H3></H3>
                         </TitleBox>
                         <TextBox>
-                        <h3>São Paulo - SP</h3>
+                        <H3Text>São Paulo - SP</H3Text>
                         </TextBox>
                     </Div>
                 </BoxContact>

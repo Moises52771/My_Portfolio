@@ -16,9 +16,15 @@ const Header: React.FC = () => {
             </h2>
             <IconsContainerStyled>
 
-                <a href="https://www.linkedin.com/in/moisesgomesdev52771"><FaLinkedinStyled/></a>
-                <a href="https://github.com/Moises52771"><FaGithubSquareStyled/></a>
-                <a href="https://wa.me/5511954642820"><FaWhatsappStyled/></a>
+                <a href="https://www.linkedin.com/in/moisesgomesdev52771" target={"_blank"}>
+                  <FaLinkedinStyled/>
+                </a>
+                <a href="https://github.com/Moises52771" target={"_blank"}>
+                  <FaGithubSquareStyled/>
+                </a>
+                <a href="https://wa.me/5511954642820" target={"_blank"}>
+                  <FaWhatsappStyled/>
+                </a>
 
             </IconsContainerStyled>
             <BoxSwitch onClick={toggleTheme}>

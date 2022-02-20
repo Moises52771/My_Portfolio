@@ -1,22 +1,14 @@
 import { styled } from "@mui/material/styles";
 import { Button } from "@mui/material";
-import { SiJavascript, 
-         SiSap,
-         SiTypescript,
-         SiHtml5,
-         SiCss3,
-         SiReact,
-         SiNodedotjs,
-         SiPython,
-         SiPhp,
-         SiMysql
-        } from "react-icons/si";
+import { FaLaptopCode } from "react-icons/fa";
+import { AiFillCode } from "react-icons/ai";
+import { FiSmartphone } from "react-icons/fi";
 
 
-export const SkillsContainer = styled('div')`
+export const OfferContainer = styled('div')`
     display: flex;
     flex-direction: column;
-    padding: 50px 170px;
+    padding: 10px 200px;
     font-family: sans-serif;
 
     ${props => props.theme.breakpoints.down('md')}{
@@ -31,10 +23,10 @@ export const Title = styled('h2')`
     color: ${props => props.theme.palette.text.primary};
 `
 
-export const BoxSkills = styled('div')`
+export const BoxOffer = styled('div')`
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 30px;
 `
 
 export const Lines = styled('div')`
@@ -52,9 +44,14 @@ export const Box = styled(Button)`
     text-align: center;
     border-radius: 10px;
     width: 180px;
-    height: 150px;
+    height: 200px;
     margin: 10px;
     padding: 10px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        width: 150px;
+        height: 160px;
+    }
 
     :hover{
         background: linear-gradient(180deg, 
@@ -63,9 +60,8 @@ export const Box = styled(Button)`
     }
 
     ${props => props.theme.breakpoints.down('md')}{
+        
         margin: 5px;
-        width: 95px;
-        height: 150px;
     }
 `
 
@@ -74,61 +70,20 @@ export const Box = styled(Button)`
 //----------------- icones das skils --------------------------------
 
 
-export const SiSapStyled = styled(SiSap)`
+
+export const FaLaptopCodeStyled = styled(FaLaptopCode)`
     color: ${({ theme }) => theme.palette.primary.contrastText};
     width: 80px;
     height: 80px;
 `
 
-export const SiJavascriptStyled = styled(SiJavascript)`
+export const AiFillCodeStyled = styled(AiFillCode)`
     color: ${({ theme }) => theme.palette.primary.contrastText};
     width: 80px;
     height: 80px;
 `
 
-export const SiTypescriptStyled = styled(SiTypescript)`
-    color: ${({ theme }) => theme.palette.primary.contrastText};
-    width: 80px;
-    height: 80px;
-`
-
-export const SiHtml5Styled = styled(SiHtml5)`
-    color: ${({ theme }) => theme.palette.primary.contrastText};
-    width: 80px;
-    height: 80px;
-`
-
-export const SiCss3Styled = styled(SiCss3)`
-    color: ${({ theme }) => theme.palette.primary.contrastText};
-    width: 80px;
-    height: 80px;
-`
-
-export const SiReactStyled = styled(SiReact)`
-    color: ${({ theme }) => theme.palette.primary.contrastText};
-    width: 80px;
-    height: 80px;
-`
-
-export const SiNodedotjsStyled = styled(SiNodedotjs)`
-    color: ${({ theme }) => theme.palette.primary.contrastText};
-    width: 80px;
-    height: 80px;
-`
-
-export const SiPythonStyled = styled(SiPython)`
-    color: ${({ theme }) => theme.palette.primary.contrastText};
-    width: 80px;
-    height: 80px;
-`
-
-export const SiPhpStyled = styled(SiPhp)`
-    color: ${({ theme }) => theme.palette.primary.contrastText};
-    width: 80px;
-    height: 80px;
-`
-
-export const SiMysqlStyled = styled(SiMysql)`
+export const FiSmartphoneStyled = styled(FiSmartphone)`
     color: ${({ theme }) => theme.palette.primary.contrastText};
     width: 80px;
     height: 80px;

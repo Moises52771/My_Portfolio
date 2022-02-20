@@ -93,8 +93,13 @@ const Portfolio = () =>{
             return(
                 <ProjectContainer>
                     <IconsContainer>
-                        <AiFillGithubStyled/>
-                        <AiOutlineGlobalStyled/>
+                        <a href={'https://github.com/Moises52771/My_Portfolio'}>
+                            <AiFillGithubStyled/>
+                        </a>
+                        <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
+                        
                     </IconsContainer>
                     <SubTitle>
                         Projeto My Portfolio
@@ -106,30 +111,47 @@ const Portfolio = () =>{
                     </IconsContainer>
                     <Text>
                         Projeto do meu portifolio pessoal desenvolvido com um layout responssivo
-                        ultilizando React.JS com Next.JS e Material-UI
+                        ultilizando React.JS com Next.JS e Material-UI em seu design
                     </Text>
                 </ProjectContainer>
             )
         }
-        else if (currentSlide == 2){
+        else if (currentSlide == 2){// Projeto com nodeJS ......
             return(
                 <ProjectContainer>
-                    <IconsContainer>
-                        <AiFillGithubStyled/>
-                        <AiOutlineGlobalStyled/>
-                    </IconsContainer>
-                    <SubTitle>
-                        Projeto 2
-                    </SubTitle>
-                </ProjectContainer>
+                <IconsContainer>
+                        <a>
+                            <AiFillGithubStyled/>
+                        </a>
+                        <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
+                </IconsContainer>
+                <SubTitle>
+                    Projeto BackEnd com NodeJS
+                </SubTitle>
+                <IconsContainer>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+                </IconsContainer>
+                <Text>
+                    Projeto do meu portifolio pessoal desenvolvido com um layout responssivo
+                    ultilizando React.JS com Next.JS e Material-UI em seu design
+                </Text>
+            </ProjectContainer>
             )
         }
         else if (currentSlide == 3){// Frontend E-Diaristas
             return(
                 <ProjectContainer>
                 <IconsContainer>
-                    <AiFillGithubStyled/>
-                    <AiOutlineGlobalStyled/>
+                        <a href={'https://github.com/Moises52771/Frontend_E-Diaristas'}>
+                            <AiFillGithubStyled/>
+                        </a>
+                        <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
                 </IconsContainer>
                 <SubTitle>
                     Frontend E-Diaristas
@@ -141,7 +163,7 @@ const Portfolio = () =>{
                 </IconsContainer>
                 <Text>
                     Projeto de uma aplicação web para contratação de diaristas, desenvolvido durante a 
-                    2° ediçao da semana multi-stack, ultilizando React.JS, Axios, Next.JS e Material-UI
+                    2° edição da semana multi-stack, ultilizando React.JS, Axios, Next.JS e Material-UI
                 </Text>
             </ProjectContainer>
             )
@@ -150,8 +172,12 @@ const Portfolio = () =>{
             return(
                 <ProjectContainer>
                 <IconsContainer>
-                    <AiFillGithubStyled/>
-                    <AiOutlineGlobalStyled/>
+                        <a href={'https://github.com/Moises52771/Backend_E-Diaristas'}>
+                            <AiFillGithubStyled/>
+                        </a>
+                        <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
                 </IconsContainer>
                 <SubTitle>
                     Backend E-Diaristas
@@ -168,12 +194,16 @@ const Portfolio = () =>{
             </ProjectContainer>
             )
         }
-        else if (currentSlide == 5){
+        else if (currentSlide == 5){// Projeto IES.Cronos
             return(
                 <ProjectContainer>
                 <IconsContainer>
-                    <AiFillGithubStyled/>
-                    <AiOutlineGlobalStyled/>
+                        <a href={'https://github.com/Moises52771/IES.Cronos'}>
+                            <AiFillGithubStyled/>
+                        </a>
+                        <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
                 </IconsContainer>
                 <SubTitle>
                     Projeto IES.Cronos
@@ -184,7 +214,8 @@ const Portfolio = () =>{
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
                 </IconsContainer>
                 <Text>
-                    Este projeto possui uma API desenvolvida em PHP, para tratar as requisições do frontend que 
+                    Projeto de uma aplicação de gestão de horarios de uma instituição de ensino,
+                     possui uma API desenvolvida em PHP, para tratar as requisições do frontend que 
                     foi desenvolvido com React.JS
                 </Text>
             </ProjectContainer>
@@ -214,7 +245,7 @@ const Portfolio = () =>{
                             <img src="img/projects/ProjetoMyPortfolio.jpg"/>
                         </div>
                         <div class="slide">
-                            <img src="img/projects/p4.gif"/>
+                            <img src="img/projects/Crud_NodeJS.jpg"/>
                         </div>
                         <div class="slide">
                             <img src="img/projects/FrontEnd_E-diaristas.jpg"/>
