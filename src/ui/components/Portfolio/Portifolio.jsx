@@ -38,8 +38,7 @@ const Portfolio = () =>{
                 document.getElementById("lbSlide3").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide4").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide5").style.backgroundColor = '#414141';    
-
-                               
+                     
         }     
         
     
@@ -132,7 +131,7 @@ const Portfolio = () =>{
                 </IconsContainer>
                 <Text>
                     Projeto de uma aplicação de gestão de horarios de uma instituição de ensino,
-                     possui uma API desenvolvida em PHP, para tratar as requisições do frontend
+                     possui uma API desenvolvida em PHP, que trata as varias requisições do frontend
                       desenvolvido com React.JS e Axios
                 </Text>
             </ProjectContainer>
@@ -188,7 +187,7 @@ const Portfolio = () =>{
                     </IconsContainer>
                     <Text>
                         Projeto do meu portifolio pessoal desenvolvido com um layout responsivo
-                        ultilizando React.JS com Next.JS e Material-UI em seu design
+                        ultilizando React.JS, Next.JS e Material-UI em seu design
                     </Text>
                 </ProjectContainer>
             )
