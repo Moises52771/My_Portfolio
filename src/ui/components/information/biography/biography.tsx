@@ -35,7 +35,7 @@ const Biography = () => {
                 <Icons>
                     <FaLaptopCodeStyled/>
                     <div>
-                        5 projetos completos 
+                        + de 5 projetos completos 
                     </div>
                 </Icons>
                 <Icons>

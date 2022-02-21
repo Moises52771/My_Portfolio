@@ -110,12 +110,40 @@ const Portfolio = () =>{
     const slide = useMemo(() => {// Projeto My Portfolio
 
         
-        if (currentSlide == 1){// Projeto com nodeJS ......
+         if (currentSlide == 1){// Projeto IES.Cronos
             
             return(
                 <ProjectContainer>
                 <IconsContainer>
+                        <a href={'https://github.com/Moises52771/IES.Cronos'} target={"_blank"}>
+                            <AiFillGithubStyled/>
+                        </a>
                         <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
+                </IconsContainer>
+                <SubTitle>
+                    Projeto IES.Cronos
+                </SubTitle>
+                <IconsContainer>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                </IconsContainer>
+                <Text>
+                    Projeto de uma aplicação de gestão de horarios de uma instituição de ensino,
+                     possui uma API desenvolvida em PHP, para tratar as requisições do frontend
+                      desenvolvido com React.JS e Axios
+                </Text>
+            </ProjectContainer>
+            )
+        }
+        else if (currentSlide == 2){// Projeto com nodeJS ......
+            
+            return(
+                <ProjectContainer>
+                <IconsContainer>
+                        <a href={''} target={"_blank"}>
                             <AiFillGithubStyled/>
                         </a>
                         <a>
@@ -137,12 +165,12 @@ const Portfolio = () =>{
             </ProjectContainer>
             )
         }
-        else if (currentSlide == 2){
+        else if (currentSlide == 3){// Projeto My Portfolio
             
             return(
                 <ProjectContainer>
                     <IconsContainer>
-                        <a href={'https://github.com/Moises52771/My_Portfolio'}>
+                        <a href={'https://github.com/Moises52771/My_Portfolio'} target={"_blank"}>
                             <AiFillGithubStyled/>
                         </a>
                         <a>
@@ -165,12 +193,12 @@ const Portfolio = () =>{
                 </ProjectContainer>
             )
         }
-        else if (currentSlide == 3){// Frontend E-Diaristas
+        else if (currentSlide == 4){// Frontend E-Diaristas
             
             return(
                 <ProjectContainer>
                 <IconsContainer>
-                        <a href={'https://github.com/Moises52771/Frontend_E-Diaristas'}>
+                        <a href={'https://github.com/Moises52771/Frontend_E-Diaristas'} target={"_blank"}>
                             <AiFillGithubStyled/>
                         </a>
                         <a>
@@ -192,12 +220,12 @@ const Portfolio = () =>{
             </ProjectContainer>
             )
         }
-        else if (currentSlide == 4){// Backend E-Diaristas
+        else if (currentSlide == 5){// Backend E-Diaristas
             
             return(
                 <ProjectContainer>
                 <IconsContainer>
-                        <a href={'https://github.com/Moises52771/Backend_E-Diaristas'}>
+                        <a href={'https://github.com/Moises52771/Backend_E-Diaristas'} target={"_blank"}>
                             <AiFillGithubStyled/>
                         </a>
                         <a>
@@ -215,34 +243,6 @@ const Portfolio = () =>{
                 <Text>
                     Este projeto é composto por uma API desenvolvida em Python, que trata as requisições do frontend e 
                     possui uma aplicação administrativa feita com Django e Bootstrap em seu desenvolvimeto
-                </Text>
-            </ProjectContainer>
-            )
-        }
-        else if (currentSlide == 5){// Projeto IES.Cronos
-            
-            return(
-                <ProjectContainer>
-                <IconsContainer>
-                        <a href={'https://github.com/Moises52771/IES.Cronos'}>
-                            <AiFillGithubStyled/>
-                        </a>
-                        <a>
-                            <AiOutlineGlobalStyled/>  
-                        </a>
-                </IconsContainer>
-                <SubTitle>
-                    Projeto IES.Cronos
-                </SubTitle>
-                <IconsContainer>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                </IconsContainer>
-                <Text>
-                    Projeto de uma aplicação de gestão de horarios de uma instituição de ensino,
-                     possui uma API desenvolvida em PHP, para tratar as requisições do frontend que 
-                    foi desenvolvido com React.JS
                 </Text>
             </ProjectContainer>
             )
@@ -276,6 +276,9 @@ const Portfolio = () =>{
 
 
                             <div class="slide s1">
+                                <img src="img/projects/ProjetoIES.Cronos.jpg"/>
+                            </div>
+                            <div class="slide">
                                 <img src="img/projects/Pj_NodeJS.jpg"/>
                             </div>
                             <div class="slide">
@@ -286,9 +289,6 @@ const Portfolio = () =>{
                             </div>
                             <div class="slide">
                                 <img src="img/projects/BackEnd_E-diaristas.jpg"/>
-                            </div>
-                            <div class="slide">
-                                <img src="img/projects/p3.jpg"/>
                             </div>
                         </div>
                             
