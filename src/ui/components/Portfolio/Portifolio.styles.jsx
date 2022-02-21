@@ -1,6 +1,7 @@
 import { styled } from "@mui/material/styles"
 import "react-image-gallery/styles/css/image-gallery.css";
 import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai"
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 
 
 export const PortfolioStyled = styled('div')`
@@ -11,7 +12,7 @@ export const PortfolioStyled = styled('div')`
 
     ${props => props.theme.breakpoints.down('md')}{
         
-        padding: 20px 40px ;
+        padding: 20px 0px ;
     }
 `
 
@@ -51,11 +52,14 @@ export const Content = styled('div')`
     overflow: hidden;
     margin: 0 auto;
     border: solid #333 1px;
+    display:flex
+    flex-direction: column;
 
     ${props => props.theme.breakpoints.down('md')}{
         
         height: 220px;
-        width: 410px;
+        min-width: 380px;
+        max-width: 380px;
     }
 
     input{
@@ -107,10 +111,10 @@ export const Navigation = styled('div')`
     position: relative;
     bottom: 30px;
     margin: 0 auto;
-    transform: translate(25%);
+    justify-content: center;
 
     ${props => props.theme.breakpoints.down('md')}{
-        transform: translate(16%);
+        
         
     }
 
@@ -143,6 +147,53 @@ export const Navigation = styled('div')`
 
 `
 
+export const IoIosArrowForwardStyled = styled(IoIosArrowForward)`
+    color: ${({ theme }) => theme.palette.primary.main};
+    position: relative;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    top: 120px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        top: 80px;
+        right: -40px;
+        min-width: 40px;
+        height: 60px;
+    }
+`
+
+export const IoIosArrowBackStyled = styled(IoIosArrowBack)`
+    color: ${({ theme }) => theme.palette.primary.main};
+    position: relative;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    top: 120px;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        top: 80px;
+        left: -40px;
+        min-width: 40px;
+        height: 60px;
+    }
+
+`
+
+export const Div = styled('div')`
+    margin: 0 auto;
+    width: 60vw;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+
+    ${props => props.theme.breakpoints.down('md')}{
+        
+        width: 100vw;
+    }
+`
 
 //-----------------------------------------------------------------------------------
 //----------- Informações dos projetos ---------------------------------------------

@@ -9,9 +9,12 @@ import { PortfolioStyled,
          SubTitle,
          IconsContainer,
          AiFillGithubStyled,
-         AiOutlineGlobalStyled
+         AiOutlineGlobalStyled,
+         IoIosArrowBackStyled,
+         IoIosArrowForwardStyled,
+         Div
        } from "./Portifolio.styles";
-import { useState } from "react";   
+import { useState } from "react";  
     
 
   
@@ -29,7 +32,7 @@ const Portfolio = () =>{
         
     
         if (currentSlide == 1) {
-                                              
+                checked(currentSlide);                                
                 document.getElementById("lbSlide1").style.backgroundColor = '#f3f3f3';
                 document.getElementById("lbSlide2").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide3").style.backgroundColor = '#414141';
@@ -41,7 +44,7 @@ const Portfolio = () =>{
         
     
         if (currentSlide == 2) {
-                        
+                checked(currentSlide);    
                 document.getElementById("lbSlide1").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide2").style.backgroundColor = '#f3f3f3';
                 document.getElementById("lbSlide3").style.backgroundColor = '#414141';
@@ -51,7 +54,7 @@ const Portfolio = () =>{
         }
     
         if (currentSlide == 3) {
-                        
+                checked(currentSlide);        
                 document.getElementById("lbSlide1").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide2").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide3").style.backgroundColor = '#f3f3f3';
@@ -61,7 +64,7 @@ const Portfolio = () =>{
         }
     
         if (currentSlide == 4) {
-                        
+                checked(currentSlide);           
                 document.getElementById("lbSlide1").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide2").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide3").style.backgroundColor = '#414141';
@@ -71,7 +74,7 @@ const Portfolio = () =>{
         }
     
         if (currentSlide == 5) {
-                        
+                checked(currentSlide);       
                 document.getElementById("lbSlide1").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide2").style.backgroundColor = '#414141';
                 document.getElementById("lbSlide3").style.backgroundColor = '#414141';
@@ -82,14 +85,60 @@ const Portfolio = () =>{
         }
         //------------------------------------------------------------------------------------------------
         
-          
+        function checked (value) {
+            if(value == 1){
+                document.getElementById("slide1").checked = true;
+            }
+            else if(value == 2){
+                document.getElementById("slide2").checked = true;
+            }
+            else if(value == 3){
+                document.getElementById("slide3").checked = true;
+            }
+            else if(value == 4){
+                document.getElementById("slide4").checked = true;
+            }
+            else if(value == 5){
+                document.getElementById("slide5").checked = true;
+            }
+        }
         
     }
 
 
     //----------- Escolhe o conteudo dos slides -----------------------------------------------------------
     const slide = useMemo(() => {// Projeto My Portfolio
-        if (currentSlide == 1){
+
+        
+        if (currentSlide == 1){// Projeto com nodeJS ......
+            
+            return(
+                <ProjectContainer>
+                <IconsContainer>
+                        <a>
+                            <AiFillGithubStyled/>
+                        </a>
+                        <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
+                </IconsContainer>
+                <SubTitle>
+                    Projeto BackEnd com NodeJS
+                </SubTitle>
+                <IconsContainer>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+                </IconsContainer>
+                <Text>
+                    Projeto do meu portifolio pessoal desenvolvido com um layout responsivo
+                    ultilizando React.JS com Next.JS e Material-UI em seu design
+                </Text>
+            </ProjectContainer>
+            )
+        }
+        else if (currentSlide == 2){
+            
             return(
                 <ProjectContainer>
                     <IconsContainer>
@@ -110,39 +159,14 @@ const Portfolio = () =>{
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
                     </IconsContainer>
                     <Text>
-                        Projeto do meu portifolio pessoal desenvolvido com um layout responssivo
+                        Projeto do meu portifolio pessoal desenvolvido com um layout responsivo
                         ultilizando React.JS com Next.JS e Material-UI em seu design
                     </Text>
                 </ProjectContainer>
             )
         }
-        else if (currentSlide == 2){// Projeto com nodeJS ......
-            return(
-                <ProjectContainer>
-                <IconsContainer>
-                        <a>
-                            <AiFillGithubStyled/>
-                        </a>
-                        <a>
-                            <AiOutlineGlobalStyled/>  
-                        </a>
-                </IconsContainer>
-                <SubTitle>
-                    Projeto BackEnd com NodeJS
-                </SubTitle>
-                <IconsContainer>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
-                </IconsContainer>
-                <Text>
-                    Projeto do meu portifolio pessoal desenvolvido com um layout responssivo
-                    ultilizando React.JS com Next.JS e Material-UI em seu design
-                </Text>
-            </ProjectContainer>
-            )
-        }
         else if (currentSlide == 3){// Frontend E-Diaristas
+            
             return(
                 <ProjectContainer>
                 <IconsContainer>
@@ -169,6 +193,7 @@ const Portfolio = () =>{
             )
         }
         else if (currentSlide == 4){// Backend E-Diaristas
+            
             return(
                 <ProjectContainer>
                 <IconsContainer>
@@ -195,6 +220,7 @@ const Portfolio = () =>{
             )
         }
         else if (currentSlide == 5){// Projeto IES.Cronos
+            
             return(
                 <ProjectContainer>
                 <IconsContainer>
@@ -232,49 +258,66 @@ const Portfolio = () =>{
                 Portifolio
             </Title>
             <PortfolioComponents>
-                <Content>
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide1"/>
-                        <input type="radio" name="slide" id="slide2"/>
-                        <input type="radio" name="slide" id="slide3"/>
-                        <input type="radio" name="slide" id="slide4"/>
-                        <input type="radio" name="slide" id="slide5"/>
+                <Div>
+                    <IoIosArrowBackStyled onClick={
+                        () => {
+                            setCurrentSlide(
+                                currentSlide < 6 && currentSlide > 1 ? currentSlide - 1 : currentSlide
+                            );
+                        }
+                    }/>
+                    <Content>
+                        <div class="slides">
+                            <input type="radio" name="slide" id="slide1"/>
+                            <input type="radio" name="slide" id="slide2"/>
+                            <input type="radio" name="slide" id="slide3"/>
+                            <input type="radio" name="slide" id="slide4"/>
+                            <input type="radio" name="slide" id="slide5"/>
 
 
-                        <div class="slide s1">
-                            <img src="img/projects/ProjetoMyPortfolio.jpg"/>
+                            <div class="slide s1">
+                                <img src="img/projects/Pj_NodeJS.jpg"/>
+                            </div>
+                            <div class="slide">
+                                <img src="img/projects/ProjetoMyPortfolio.jpg"/>
+                            </div>
+                            <div class="slide">
+                                <img src="img/projects/FrontEnd_E-diaristas.jpg"/>
+                            </div>
+                            <div class="slide">
+                                <img src="img/projects/BackEnd_E-diaristas.jpg"/>
+                            </div>
+                            <div class="slide">
+                                <img src="img/projects/p3.jpg"/>
+                            </div>
                         </div>
-                        <div class="slide">
-                            <img src="img/projects/Crud_NodeJS.jpg"/>
-                        </div>
-                        <div class="slide">
-                            <img src="img/projects/FrontEnd_E-diaristas.jpg"/>
-                        </div>
-                        <div class="slide">
-                            <img src="img/projects/BackEnd_E-diaristas.jpg"/>
-                        </div>
-                        <div class="slide">
-                            <img src="img/projects/p3.jpg"/>
-                        </div>
-                    </div>
-                    <Navigation>
-                        <label for="slide1" class="bar" id="lbSlide1" onClick={
-                            () => {setCurrentSlide(1);}
-                        }></label>
-                        <label for="slide2" class="bar" id="lbSlide2" onClick={
-                            () => {setCurrentSlide(2);}
-                        }></label>
-                        <label for="slide3" class="bar" id="lbSlide3" onClick={
-                            () => {setCurrentSlide(3);}
-                        }></label>
-                        <label for="slide4" class="bar" id="lbSlide4" onClick={
-                            () => {setCurrentSlide(4);}
-                        }></label>
-                        <label for="slide5" class="bar" id="lbSlide5" onClick={
-                            () => {setCurrentSlide(5);}
-                        }></label>
-                    </Navigation>
-                </Content>
+                            
+                        <Navigation>
+                            <label for="slide1" class="bar" id="lbSlide1" onClick={
+                                () => {setCurrentSlide(1);}
+                            }></label>
+                            <label for="slide2" class="bar" id="lbSlide2" onClick={
+                                () => {setCurrentSlide(2);}
+                            }></label>
+                            <label for="slide3" class="bar" id="lbSlide3" onClick={
+                                () => {setCurrentSlide(3);}
+                            }></label>
+                            <label for="slide4" class="bar" id="lbSlide4" onClick={
+                                () => {setCurrentSlide(4);}
+                            }></label>
+                            <label for="slide5" class="bar" id="lbSlide5" onClick={
+                                () => {setCurrentSlide(5);}
+                            }></label>
+                        </Navigation>
+                    </Content>
+                    <IoIosArrowForwardStyled onClick={
+                        () => {
+                            setCurrentSlide(
+                                currentSlide < 5 && currentSlide > 0 ? currentSlide + 1 : currentSlide 
+                            )
+                        }
+                    }/>
+                </Div>
                 
                 {slide}
                 
@@ -283,6 +326,6 @@ const Portfolio = () =>{
     )
 }
 
-
 export default Portfolio;
+
 

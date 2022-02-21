@@ -14,12 +14,11 @@ import {
       <FooterStyled>
         <FooterContainer>
           <Box sx={{ maxWidth: "400px" }}>
-            <FooterTitle>Quem Somos</FooterTitle>
+            <FooterTitle>Entre em contato comigo</FooterTitle>
             <Typography variant={"body2"} sx={{ mt: 2 }}>
-              O help-Diaristas te ajuda a encontrar o profissional perfeito para
-              realizar a limpeza de sua casa. Garantiremos os melhores
-              profissionais com total segurança e praticidade! São Milhares de
-              clientes satisfeitos por todo o pais.
+              E-Mail<br/> 
+              moi52771@gmail.com<br/><br/>
+              Muito obrigado(a) pela atenção,<br/> fico no aguardo de um retorno 
             </Typography>
           </Box>
   
