@@ -19,11 +19,11 @@ const Biography = () => {
                 Sobre mim
             </Title>
             <Text>
-                Sempre fui apaixonado por tecnologia, assim que conheci o mundo
-                do desenvolvimento descidi mergulhar de cabeça e me aprofundar a 
-                cada dia mais. Hoje em conjunto com a faculdade, busco me desafiar 
-                com novos projetos, sempre buscando me manter atualizado com as novas 
-                tecnologias e tendencias do mercado
+                Sempre fui apaixonado por tecnologia. Assim que conheci o mundo
+                do desenvolvimento, decidi mergulhar de cabeça e me aprofundar a 
+                cada dia mais. Hoje, em conjunto com a faculdade, sempre me desafio 
+                com novos projetos, buscando me manter sempre atualizado com as novas 
+                tecnologias e tendencias do mercado.
             </Text>
             <Feedback>
                 <Icons>

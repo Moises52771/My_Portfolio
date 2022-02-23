@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <HeaderAppBar position={"sticky"}>
         <Toolbar component={Container}>
             <h2>
-                Moises Gomes 
+                Moisés Gomes 
             </h2>
             <IconsContainerStyled>
 

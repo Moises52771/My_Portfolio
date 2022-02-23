@@ -16,12 +16,13 @@ const PageTitle = () => {
     return(
         <PageTopStyled>
             <Div>
-                <TopTitle>Olá, sou Moises Gomes</TopTitle> 
+                <TopTitle>Olá, sou Moisés Gomes</TopTitle> 
                 <SubTitle>Desenvolvedor Full Stack <FcMultipleDevicesStyled/></SubTitle> 
                 <Text>
-                    Seja muito bem vindo, se está em busca
-                    de um DEV para seu time com muita garra e vontade de 
-                    aprender a cada dia mais, achou a pessoa certa!
+                    Seja muito bem vindo!<br/>
+                    Se está em busca de um DEV com muita garra, vontade de 
+                    aprender e evoluir a cada dia mais, para agregar em seu time,
+                     encontrou a pessoa certa!
                 </Text>
                 <ButtonStyled href={"https://wa.me/5511954642820"}><>Contate-me</>&nbsp;&nbsp;&nbsp;<RiSendPlane2Line/></ButtonStyled>
             </Div>          

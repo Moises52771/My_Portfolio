@@ -74,7 +74,7 @@ const Skills = () => {
                     </Box>
                 </Lines><br/>
                 <Title>
-                    Tambem Conheço
+                    Também Conheço
                 </Title><br/>
                 <Lines>
                     <Box>

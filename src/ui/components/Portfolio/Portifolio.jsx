@@ -179,7 +179,7 @@ const Portfolio = () =>{
                         
                     </IconsContainer>
                     <SubTitle>
-                        Projeto My Portfolio
+                        Projeto My Portfólio
                     </SubTitle>
                     <IconsContainer>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
@@ -187,7 +187,7 @@ const Portfolio = () =>{
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
                     </IconsContainer>
                     <Text>
-                        Projeto do meu portifolio pessoal desenvolvido com um layout responsivo
+                        Projeto do meu portifólio pessoal desenvolvido com um layout responsivo
                         ultilizando React.JS, Next.JS e Material-UI em seu design
                     </Text>
                 </ProjectContainer>
@@ -255,7 +255,7 @@ const Portfolio = () =>{
         
         <PortfolioStyled>
             <Title>
-                Portifolio
+                Portifólio
             </Title>
             <PortfolioComponents>
                 <Div>
