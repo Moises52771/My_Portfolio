@@ -50,30 +50,14 @@ const Skills = () => {
                             CSS 3
                         </h3>
                     </Box>
+                    
+                    
+                </Lines>
+                <Lines>    
                     <Box>
                         <SiReactStyled/>
                         <h3>
                             ReactJS
-                        </h3>
-                    </Box>
-                </Lines>
-                <Lines>
-                    <Box>
-                        <SiNodedotjsStyled/>
-                        <h3>
-                            NodeJS
-                        </h3>
-                    </Box>
-                    <Box>
-                        <SiPythonStyled/>
-                        <h3>
-                            Python
-                        </h3>
-                    </Box>
-                    <Box>
-                        <SiPhpStyled/>
-                        <h3>
-                            PHP
                         </h3>
                     </Box>
                     <Box>
@@ -82,6 +66,31 @@ const Skills = () => {
                             MySQL
                         </h3>
                     </Box>
+                    <Box>
+                        <SiPythonStyled/>
+                        <h3>
+                            Python
+                        </h3>
+                    </Box>
+                </Lines><br/>
+                <Title>
+                    Tambem Conheço
+                </Title><br/>
+                <Lines>
+                    <Box>
+                        <SiNodedotjsStyled/>
+                        <h3>
+                            NodeJS
+                        </h3>
+                    </Box>
+                    
+                    <Box>
+                        <SiPhpStyled/>
+                        <h3>
+                            PHP
+                        </h3>
+                    </Box>
+                    
                     <Box>
                         <SiSapStyled/>
                         <h3>

@@ -109,7 +109,35 @@ const Portfolio = () =>{
     const slide = useMemo(() => {// Projeto My Portfolio
 
         
-         if (currentSlide == 1){// Projeto IES.Cronos
+        if (currentSlide == 1){// Projeto com nodeJS ......
+            
+            return(
+                <ProjectContainer>
+                <IconsContainer>
+                        <a href={'https://github.com/Moises52771/API_Filmes.git'} target={"_blank"}>
+                            <AiFillGithubStyled/>
+                        </a>
+                        <a>
+                            <AiOutlineGlobalStyled/>  
+                        </a>
+                </IconsContainer>
+                <SubTitle>
+                    API de Filmes com NodeJS
+                </SubTitle>
+                <IconsContainer>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+                </IconsContainer>
+                <Text>
+                    API de Filmes desenvolvida com Node.JS, Express.JS, TypeORM e PostegreSQL. 
+                    O projeto não possui um frontend, mas no repositório do GitHub existe a documentação
+                    de como ultiliza-lo
+                </Text>
+            </ProjectContainer>
+            )
+        }
+        else if (currentSlide == 2){// Projeto IES.Cronos
             
             return(
                 <ProjectContainer>
@@ -130,36 +158,9 @@ const Portfolio = () =>{
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
                 </IconsContainer>
                 <Text>
-                    Projeto de uma aplicação de gestão de horarios de uma instituição de ensino,
+                    Projeto de uma aplicação para gestão de horarios de uma instituição de ensino,
                      possui uma API desenvolvida em PHP, que trata as varias requisições do frontend
                       desenvolvido com React.JS e Axios
-                </Text>
-            </ProjectContainer>
-            )
-        }
-        else if (currentSlide == 2){// Projeto com nodeJS ......
-            
-            return(
-                <ProjectContainer>
-                <IconsContainer>
-                        <a href={''} target={"_blank"}>
-                            <AiFillGithubStyled/>
-                        </a>
-                        <a>
-                            <AiOutlineGlobalStyled/>  
-                        </a>
-                </IconsContainer>
-                <SubTitle>
-                    Projeto BackEnd com NodeJS
-                </SubTitle>
-                <IconsContainer>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
-                </IconsContainer>
-                <Text>
-                    Projeto do meu portifolio pessoal desenvolvido com um layout responsivo
-                    ultilizando React.JS com Next.JS e Material-UI em seu design
                 </Text>
             </ProjectContainer>
             )
@@ -275,10 +276,10 @@ const Portfolio = () =>{
 
 
                             <div class="slide s1">
-                                <img src="img/projects/ProjetoIES.Cronos.jpg"/>
+                                <img src="img/projects/API_Filmes.jpg"/>
                             </div>
                             <div class="slide">
-                                <img src="img/projects/Pj_NodeJS.jpg"/>
+                                <img src="img/projects/ProjetoIES.Cronos.jpg"/>
                             </div>
                             <div class="slide">
                                 <img src="img/projects/ProjetoMyPortfolio.jpg"/>
