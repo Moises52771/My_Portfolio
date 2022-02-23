@@ -45,7 +45,7 @@ const Biography = () => {
                     </div>
                 </Icons>
             </Feedback>
-            <ButtonStyled href={'img/Moises Gomes da Silva CV.pdf'}  target={"_blank"}>
+            <ButtonStyled href={'img/Moises Gomes da Silva CV.pdf'}>
                 Baixar Curriculo &nbsp;&nbsp;<MdFileDownload/>
             </ButtonStyled>
         </BiographyContainer>
